@@ -4,7 +4,7 @@ export PATH=$PATH:/opt/homebrew/bin
 if [[ "$OSTYPE" == "darwin"* ]]; then
     if ! command -v brew &>/dev/null; then
         echo "Homebrew is not installed. Installing now..."
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
     # Check if oh-my-zsh is installed
