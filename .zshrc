@@ -1,5 +1,19 @@
 export PATH=$PATH:/opt/homebrew/bin
 
+# Check if the OS is macOS and if Homebrew is installed
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    if ! command -v brew &>/dev/null; then
+        echo "Homebrew is not installed. Installing now..."
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    fi
+
+    # Check if oh-my-zsh is installed
+    if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+        echo "oh-my-zsh not found. Starting installation."
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    fi
+fi
+  
 # fix commands' misspelling
 setopt correct
 
