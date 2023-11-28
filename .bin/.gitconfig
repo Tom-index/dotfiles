@@ -1,0 +1,8 @@
+[user]
+	name = Tom-index
+	email = 150645282+Tom-index@users.noreply.github.com
+[alias]
+        co = checkout
+        st = status
+        br = branch
+        ci = commit
