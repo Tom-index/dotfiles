@@ -3,11 +3,11 @@
 /.**
 
 ### not ignore ###
-!/.zshrc
 !/.bin/
 !/.bin/**
+!/.bin/.**
 !/.github/
-!.github/**
+!/.github/**
 !/.Brewfile
 !/Makefile
 
