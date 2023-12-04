@@ -1,17 +1,18 @@
 ### all ignore ###
-/*
-/.**
+../*
+../.**
 
 ### not ignore ###
-!/.bin/
-!/.bin/**
-!/.github/
-!/.github/**
-!/.Brewfile
-!/Makefile
+!../.Brewfile
+!../.bin/
+!../.bin/**
+!../.github/
+!../.github/**
+!../Makefile
+!../vscode/
+!../vscode/**
 
-
-!/README.md
-!/LICENSE
-!/.gitignore
-!/.gitkeep
+!../README.md
+!../LICENSE
+!../.gitignore
+!../.gitkeep
