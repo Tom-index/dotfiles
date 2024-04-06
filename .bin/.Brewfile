@@ -4,6 +4,9 @@ tap "homebrew/bundle"
 tap "teamookla/speedtest"
 
 # brews
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 brew "git"
 brew "neofetch"
 brew "peco"
